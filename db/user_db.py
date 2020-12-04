@@ -21,7 +21,7 @@ database_users = {
                             "balance":12000}),
     "andres18": UserInDB(**{"username":"andres18",
                             "password":"hola",
-                            "balance":35000}),
+                            "balance":36000}),
 }
 
 #Bloque 3: definición de funciones sobre la base de datos fictica
