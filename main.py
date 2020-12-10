@@ -14,6 +14,20 @@ from fastapi import FastAPI
 from fastapi import HTTPException
 # se crea las fastapi
 api = FastAPI()
+######################################################
+## las politicas de CORS== DEFINIR EL ORIGEN DE LOS LLAMADOS 
+
+from fastapi.middleware.cors import CORSMiddleware
+origins = [
+    "http://localhost.tiangolo.com", "https://localhost.tiangolo.com",
+    "http://localhost", "http://localhost:8080",
+]
+api.add_middleware(
+    CORSMiddleware, allow_origins=origins,
+    allow_credentials=True, allow_methods=["*"], allow_headers=["*"],
+)
+######################################################
+
 
 #Bloque 3: se implementa la funcionalidad auth_user:(autenticar usuario)
 # se especifica el metodo que vamos a usar para realizar este metodo y la url

@@ -18,7 +18,7 @@ database_users = {
 # el nombre es la llave : mapeamos el objeto con cada dato de los objetos  UserInDB
     "camilo24": UserInDB(**{"username":"camilo24",
                             "password":"root",
-                            "balance":12000}),
+                            "balance":14000}),
     "andres18": UserInDB(**{"username":"andres18",
                             "password":"hola",
                             "balance":36000}),
