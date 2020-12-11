@@ -20,7 +20,7 @@ api = FastAPI()
 from fastapi.middleware.cors import CORSMiddleware
 origins = [
     "http://localhost.tiangolo.com", "https://localhost.tiangolo.com",
-    "http://localhost", "http://localhost:8080", "https://cajero-app32.herokuapp.com"
+    "http://localhost", "https://cajero-app32.herokuapp.com", "http://localhost:8080", 
 ]
 api.add_middleware(
     CORSMiddleware, allow_origins=origins,
